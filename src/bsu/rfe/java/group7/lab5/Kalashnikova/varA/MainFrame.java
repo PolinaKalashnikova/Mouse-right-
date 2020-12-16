@@ -57,6 +57,7 @@ public class MainFrame extends JFrame {
                     fileChooser = new JFileChooser();
                     fileChooser.setCurrentDirectory(new File("."));
                 }
+
                 if (fileChooser.showOpenDialog(MainFrame.this) ==
                         JFileChooser.APPROVE_OPTION)
                     openGraphics(fileChooser.getSelectedFile());
